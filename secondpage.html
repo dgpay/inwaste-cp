@@ -11,42 +11,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Popper JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
 </script>
+    {% if title %}
+        <title>Flask Blog - {{ title }}</title>
+    {% else %}
+        <title>Flask Blog</title>
+    {% endif %}
 
-    <title>Aurinquisin</title>
     <style>
-    .leftside, .rightside {
-        height: 100vh;
-        width:100%;
-    }
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 
-    @media screen and (min-width:768px)
-    {
-        .leftside, .rightside{
-            height:100vh;
-        }
-    }
+body {
+    position: relative;
+}
 
-    .leftside{
-        background:black;
-    }
+#top {
+    height: 60%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #fafafa;
+}
 
-    .rightside{
-        background:white;
-    }
+#bottom {
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    overflow-y: auto;
+}
 
 .container {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  left:10px;
+  max-width: 400px;
 }
 
-.container img {
+img {
   width: 100%;
   height: auto;
 }
 
-.container .btn {
+ .btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,13 +76,14 @@
   
 }
 
-.container .btn:hover {
+.btn:hover {
   background-color: black;
 }
 
+
+
 .responsive-iframe {
   position: absolute;
-  margin-top: 100px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -108,25 +120,20 @@
 </head>
     <body>
 
-        <div class="row no-gutters">
-                <div class="col-md-6 no-gutters ">
-                    <div class = "leftside d-flex justify-content-center align-items-center">
-                        <div class="container">
+        <div id="top">
+                       <div class="container">
                             <img src="static\pic\site-plan.jpg" alt="Snow" style="width:90%"> 
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
                             1
                             </button>
                         </div>
-                    </div>
-                </div> 
+        </div>
 
-                <div class="col-md-6 no-gutters ">
-                    <div class = "rightside d-flex justify-content-center align-items-center">
-                    <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScUqCijLbKe_x0I8BgdXYZcz7UPCPtydNTwIXT00d0H3P5BsA/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <div id = "bottom">
+                      <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScUqCijLbKe_x0I8BgdXYZcz7UPCPtydNTwIXT00d0H3P5BsA/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
-                </div> 
-            </div>
+
 
             <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
