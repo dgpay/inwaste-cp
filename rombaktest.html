@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- BootsTrap library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Popper JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
+
+    <title>Aurinquisin</title>
+
+    <style>
+        @media (min-width: 768px) {
+        .h-md-100 { height: 100vh; }
+        }
+        .btn-round { border-radius: 30px; }
+        .bg-indigo { background: indigo; }
+        .text-cyan { color: #35bdff; }
+        .container {
+            position: relative;
+            width: 100%;
+            
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            width: auto;
+            height:auto;
+        
+        }
+
+        @media (max-width: 991px) { 
+            button.btn { 
+                padding-left: 5px; 
+                padding-right: 5px; 
+                padding-top:1px;
+                padding-bottom:1px;
+                font-size: 10px;
+            }
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+    <body>
+        <div class="d-md-flex h-md-100 align-items-center">
+
+    <!-- First Half -->
+    <div class="col-md-6 p-0 bg-indigo h-md-100">
+        <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+            <div class="logoarea pt-5 pb-5">
+                First half content here
+                <div class="container">
+                    <img src="site-plan.jpg" alt="Snow" style="width:90%"> 
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                    1</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Half -->
+    <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+        <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+            Second half content here
+        </div>
+    </div>
+        
+</div>
+    </body>
+</html>
