@@ -69,7 +69,14 @@
             bottom: 0;
             right: 0;
             width: 100%;
+            height: 640px;
             border: none;
+        }
+        .containeriframe {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
         }
 
 
@@ -97,6 +104,7 @@
 
 
 
+
     </style>
 
 </head>
@@ -121,8 +129,8 @@
             <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
                 <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
 
-                    <div id = "bottom">
-                        <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScUqCijLbKe_x0I8BgdXYZcz7UPCPtydNTwIXT00d0H3P5BsA/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <div id = "containeriframe">
+                        <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScUqCijLbKe_x0I8BgdXYZcz7UPCPtydNTwIXT00d0H3P5BsA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
 
                 </div>
