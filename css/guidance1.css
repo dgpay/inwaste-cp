@@ -1,0 +1,39 @@
+h3 {
+    position: relative;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.rectangle {
+    height: 20px;
+    width: 70px;
+    background-color: #555;
+    left: 30px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    position: relative;
+    left: 100px;
+    top: -5px;
+}
+
+p {
+    position: relative;
+    text-align: center;
+    left: 30px;
+    margin-right: 60px;
+}
+
+.next {
+    margin-right: 30px;
+}
+
+.bottom {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    display: inline-block;
+}
