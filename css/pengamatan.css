@@ -16,6 +16,10 @@
     color: #35bdff;
 }
 
+h4 h5 {
+    font-weight: 100;
+}
+
 img {
     width: 50%;
     height: auto;
@@ -40,29 +44,6 @@ img {
     display: inline-block;
     margin-bottom: 10px;
     background-color: black;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-}
-
-a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.previous {
-    background-color: #f1f1f1;
-    color: black;
-    float: left;
-}
-
-.next {
-    background-color: #04AA6D;
-    color: white;
-    float: right;
 }
 
 .responsive-iframe {

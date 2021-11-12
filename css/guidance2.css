@@ -1,0 +1,29 @@
+h3 {
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img {
+    width: 150px;
+    heigh: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    display: inline-block;
+}
