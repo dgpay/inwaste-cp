@@ -1,6 +1,6 @@
 # aurinquisin
 
-this site is a simple site by dividing the screen in two which allows for
-The user fills out the questionnaire while watching the video.
+this site is a simple site that dividing the screen into<br>
+that apperance allows users to fills out the questionnaire while watching the video.
 
 recommended to open in a mobile browser.
